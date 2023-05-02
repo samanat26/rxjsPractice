@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './includes/header/header.module';
 import { CardsModule } from './includes/cards/cards.module';
+import { PromiseModule } from './promise/promise/promise.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    CardsModule
+    CardsModule,
+    PromiseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
