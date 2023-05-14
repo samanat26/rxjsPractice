@@ -5,21 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './includes/header/header.module';
 import { CardsModule } from './includes/cards/cards.module';
-import { PromiseModule } from './promise/promise/promise.module';
+import { PromiseModule } from './promise/promise.module';
+import { ObservableModule } from './observable/observable.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HeaderModule,
-    CardsModule,
-    PromiseModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, HeaderModule, CardsModule, PromiseModule, ObservableModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
