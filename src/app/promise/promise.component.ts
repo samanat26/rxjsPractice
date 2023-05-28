@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./promise.component.css']
 })
 export class PromiseComponent {
+  constructor(){}
+  ngOnInit(){}
 
+  myfun(){
+    console.log("my function called");
+    
+  }
 }
