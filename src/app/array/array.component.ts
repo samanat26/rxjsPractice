@@ -31,10 +31,16 @@ export class ArrayComponent {
   }
 
   add(i: any) {
-    throw new Error('Method not implemented.');
+    let temp = this.data.faqs;
+    let temp2 = this.data.faqs[i];
+    temp.splice(i+1,0,temp2);
+    // save();
+
   }
 
   del(i: any) {
-    throw new Error('Method not implemented.');
+    let temp = this.data.faqs;
+    temp.splice(i,1);
+     // save();
   }
 }
