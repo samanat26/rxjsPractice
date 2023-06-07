@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card text-center mb-3" style="width: 18rem;">
+        <div class="card-body" *ngFor="let item of value.text">
+          <h5 class="card-title">{{item.observable}}</h5>
+          <p class="card-text">{{item.importance}}</p>
+          <a routerLink="from-event" class="btn btn-primary">{{item.example}}</a>
+        </div>
+      </div>
+</div>
