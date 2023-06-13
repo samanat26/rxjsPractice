@@ -8,10 +8,14 @@ import { FromEventComponent } from './observable/from-event/from-event.component
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
-  { path: 'observable', component: ObservableComponent, children : [
-    {path:'', component : ListComponent},
-    {path:'event', component : FromEventComponent},
-  ] },
+  {
+    path: 'observable',
+    component: ObservableComponent,
+    children: [
+      { path: '', component: ListComponent },
+      { path: 'event', component: FromEventComponent },
+    ],
+  },
   { path: 'array', component: ArrayComponent },
   { path: '', redirectTo: '/observable', pathMatch: 'full' },
 ];

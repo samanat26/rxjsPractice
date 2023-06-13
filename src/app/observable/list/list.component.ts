@@ -4,18 +4,15 @@ import { data } from '../data.component';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  styleUrls: ['./list.component.css'],
 })
 export class ListComponent {
+  value: any;
 
- value: any;
-
-
-  constructor(){
+  constructor() {
     this.value = data;
   }
-  ngOnInit(){
+  ngOnInit() {
     console.log(this.value);
-    
   }
 }
