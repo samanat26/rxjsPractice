@@ -5,6 +5,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { ArrayComponent } from './array/array.component';
 import { ListComponent } from './observable/list/list.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
+import { IntervalComponent } from './interval/interval.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
     children: [
       { path: '', component: ListComponent },
       { path: 'event', component: FromEventComponent },
+      { path: 'interval', component: IntervalComponent },
     ],
   },
   { path: 'array', component: ArrayComponent },

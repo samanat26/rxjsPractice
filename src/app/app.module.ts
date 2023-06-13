@@ -9,9 +9,10 @@ import { HeaderModule } from './includes/header/header.module';
 import { ObservableModule } from './observable/observable.module';
 import { ArrayComponent } from './array/array.component';
 import { PromiseComponent } from './promise/promise.component';
+import { IntervalComponent } from './interval/interval.component';
 
 @NgModule({
-  declarations: [AppComponent, ArrayComponent,PromiseComponent],
+  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent],
   imports: [BrowserModule, AppRoutingModule, HeaderModule, ObservableModule],
   providers: [],
   bootstrap: [AppComponent],
