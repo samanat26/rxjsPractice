@@ -7,9 +7,10 @@ export const data = {
       link: '/observable/event',
     },
     {
-      observable: 'fromEvent',
+      observable: 'Interval&Time',
       importance: 'importance of observable',
       example: 'check it out',
+      link: '/observable/interval',
     },
     {
       observable: 'fromEvent',

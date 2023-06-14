@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { interval } from 'rxjs';
+import { Subscription, interval, timer } from 'rxjs';
+import { DesignUtiliesPrintService } from '../observable/service/design-utilies-print.service';
 
 @Component({
   selector: 'app-interval',
@@ -9,18 +10,36 @@ import { interval } from 'rxjs';
 export class IntervalComponent {
 
 msgObj: any;
-videoSub : sub
-
-  constructor(){}
+  // videoSub: Subscription = new Subscription;
+    videoSub !: Subscription;
+  constructor(
+    private _printService : DesignUtiliesPrintService
+  ){
+  }
   ngOnInit(){
-    const broadCastVideos = interval(1000); //this will run untill unsubscribe
+    //this will run untill unsubscribe/////////
+    // const broadCastVideos = interval(1000);
+    
+    //timer - it takes 2 arguments ///
+    // timer (delay , interval)
+    const broadCastVideos = timer(5000, 1000)
 
-    broadCastVideos.subscribe(res=>{
+
+    this.videoSub = broadCastVideos.subscribe(res=>{
       // console.log(res);
       this.msgObj = "video" + res;
+      this._printService.print(this.msgObj , "elContainer")
+      this._printService.print(this.msgObj , "elContainer1")
+      this._printService.print(this.msgObj , "elContainer2")
+      
+
+      if (res >=5 ){
+        this.videoSub.unsubscribe()
+      }
       
     })
   }
+
 
  
 

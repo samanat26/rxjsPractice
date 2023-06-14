@@ -10,9 +10,10 @@ import { ObservableModule } from './observable/observable.module';
 import { ArrayComponent } from './array/array.component';
 import { PromiseComponent } from './promise/promise.component';
 import { IntervalComponent } from './interval/interval.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 @NgModule({
-  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent],
+  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent, SwitchMapComponent],
   imports: [BrowserModule, AppRoutingModule, HeaderModule, ObservableModule],
   providers: [],
   bootstrap: [AppComponent],
