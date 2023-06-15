@@ -23,7 +23,7 @@ export class OfFromComponent {
     // as an object (key & value pair)
     const obj2 = of({ a: 'suman', b: 'Iqra', c: 'Farheen' });
     obj2.subscribe((res) => {
-      this.objMsg = res;
+      this.objMsg = res; //interpolation
 
       console.log(res);
       // this._designService.print(res , 'elContainer') // res contains strings so when obj comes it gives error
