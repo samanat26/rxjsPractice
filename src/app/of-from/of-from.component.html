@@ -1,0 +1,72 @@
+<h1 class="my-2">Of & From</h1>
+<br />
+<strong>Ex - 01 Of</strong>
+<hr />
+<div class="row">
+  <div class="col-md-6">
+    <p class="border rounded py-3 px-2 bg-light">
+      <strong>Data : </strong>
+      of ("suman", "iqra", "farheen")
+    </p>
+    <hr />
+    <strong>Result</strong>
+    <ul id="elContainer"></ul>
+  </div>
+  <div class="col-md-6">
+    <p class="border rounded py-3 px-2 bg-light">
+      <strong>Data : </strong>
+      of ( &#123;"suman", "iqra", "farheen" &#125;)
+    </p>
+    <hr />
+    <strong>Result</strong>
+    <ul>
+      <li><strong>a : </strong>{{ objMsg.a }}</li>
+      <li><strong>b : </strong>{{ objMsg.b }}</li>
+      <li><strong>c : </strong>{{ objMsg.c }}</li>
+    </ul>
+  </div>
+</div>
+<hr />
+<strong>Ex - 02 From</strong>
+<br />
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <strong>Arrays</strong>
+      <hr />
+      <p class="border rounded py-3 px-2 bg-light">
+        <strong>Data : </strong>
+        from (["suman", "iqra", "farheen"])
+      </p>
+      <hr />
+      <strong>Result</strong>
+      <ul id="elContainer3"></ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div>
+      <strong>Promise</strong>
+      <hr />
+      <p class="border rounded py-3 px-2 bg-light">
+        <strong>Data : </strong>
+        Promise Resolved
+      </p>
+      <hr />
+      <strong>Result</strong>
+      <ul id="elContainer4"></ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div>
+      <strong>String</strong>
+      <hr />
+      <p class="border rounded py-3 px-2 bg-light">
+        <strong>Data : </strong>
+        from ("I am done")
+      </p>
+      <hr />
+      <strong>Result</strong>
+      <ul id="elContainer5"></ul>
+    </div>
+  </div>
+</div>

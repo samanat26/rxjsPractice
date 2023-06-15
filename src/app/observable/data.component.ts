@@ -13,9 +13,22 @@ export const data = {
       link: '/observable/interval',
     },
     {
-      observable: 'fromEvent',
+      observable: 'of & from',
       importance: 'importance of observable',
       example: 'check it out',
+      link: '/observable/ofFrom',
+    },
+    {
+      observable: 'toArray',
+      importance: 'importance of observable',
+      example: 'check it out',
+      link: '/observable/toArray',
+    },
+    {
+      observable: 'switchMap',
+      importance: 'importance of observable',
+      example: 'check it out',
+      link: '/observable/switchmap',
     },
   ],
 };

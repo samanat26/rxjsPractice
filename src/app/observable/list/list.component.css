@@ -1,49 +1,46 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    gap: 10px ;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.card-body{
-    
-    background: white;
-    border-radius: 6px;
-    color: black;
-    padding-inline-start: 16px;
-    /* width: 220px; */
-    overflow: hidden;
-    transform: translate(0);
-    font-weight: 400;
-    /* transition: -6s; */
-    /* margin-left: 20px; */
-}
-
-.card-body:hover{
-    color: white;
+.card-body {
+  background: white;
+  border-radius: 6px;
+  color: black;
+  padding-inline-start: 16px;
+  /* width: 220px; */
+  overflow: hidden;
+  transform: translate(0);
+  font-weight: 400;
+  /* transition: -6s; */
+  /* margin-left: 20px; */
 }
 
-.card-body::before{
-    content: '';
-    position: absolute;
-    top: -75px;
-    left: -45px;
-    z-index: -1;
-    background: linear-gradient(to right, #3bd9d9,#36a6bf);
-    border-radius: 50%;
-    width : 200px;
-    height: 200px;
-    transition: .6s;
-
+.card-body:hover {
+  color: white;
 }
 
-.card-body:hover::before{
-    transform: scale(4.5);
+.card-body::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: -45px;
+  z-index: -1;
+  background: linear-gradient(to right, #3bd9d9, #36a6bf);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.6s;
+}
 
+.card-body:hover::before {
+  transform: scale(4.5);
 }
 
 a {
-    color: black;
-    text-decoration: none ;
+  color: black;
+  text-decoration: none;
 }
-a:hover{
-    color: aliceblue;
+a:hover {
+  color: aliceblue;
 }

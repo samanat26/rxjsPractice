@@ -6,6 +6,9 @@ import { ArrayComponent } from './array/array.component';
 import { ListComponent } from './observable/list/list.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { OfFromComponent } from './of-from/of-from.component';
+import { ToArrayComponent } from './to-array/to-array.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -16,6 +19,9 @@ const routes: Routes = [
       { path: '', component: ListComponent },
       { path: 'event', component: FromEventComponent },
       { path: 'interval', component: IntervalComponent },
+      { path: 'switchmap', component: SwitchMapComponent },
+      { path: 'ofFrom', component: OfFromComponent },
+      { path: 'toArray', component: ToArrayComponent },
     ],
   },
   { path: 'array', component: ArrayComponent },

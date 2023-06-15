@@ -11,9 +11,11 @@ import { ArrayComponent } from './array/array.component';
 import { PromiseComponent } from './promise/promise.component';
 import { IntervalComponent } from './interval/interval.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { OfFromComponent } from './of-from/of-from.component';
+import { ToArrayComponent } from './to-array/to-array.component';
 
 @NgModule({
-  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent, SwitchMapComponent],
+  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent, SwitchMapComponent, OfFromComponent, ToArrayComponent],
   imports: [BrowserModule, AppRoutingModule, HeaderModule, ObservableModule],
   providers: [],
   bootstrap: [AppComponent],
