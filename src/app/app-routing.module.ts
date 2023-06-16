@@ -9,6 +9,7 @@ import { IntervalComponent } from './interval/interval.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
       { path: 'switchmap', component: SwitchMapComponent },
       { path: 'ofFrom', component: OfFromComponent },
       { path: 'toArray', component: ToArrayComponent },
+      { path: 'custom', component: CustomObservableComponent },
     ],
   },
   { path: 'array', component: ArrayComponent },

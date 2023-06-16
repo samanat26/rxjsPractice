@@ -19,10 +19,16 @@ export const data = {
       link: '/observable/ofFrom',
     },
     {
-      observable: 'toArray',
+      observable: 'ToArray',
       importance: 'importance of observable',
       example: 'check it out',
       link: '/observable/toArray',
+    },
+    {
+      observable: 'Custom Observable',
+      importance: 'importance of observable',
+      example: 'check it out',
+      link: '/observable/custom',
     },
     {
       observable: 'switchMap',
