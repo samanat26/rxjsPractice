@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DesignUtiliesPrintService {
   constructor() {}
   //to append an element by stream
-  print(val: string, containerID: string) {
+  print(val: any, containerID: string) {
     let el = document.createElement('li');
     el.innerText = val;
     document.getElementById(containerID)?.appendChild(el);

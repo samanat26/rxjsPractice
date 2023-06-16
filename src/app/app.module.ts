@@ -14,9 +14,10 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
-  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent, SwitchMapComponent, OfFromComponent, ToArrayComponent, CustomObservableComponent],
+  declarations: [AppComponent, ArrayComponent,PromiseComponent, IntervalComponent, SwitchMapComponent, OfFromComponent, ToArrayComponent, CustomObservableComponent, MapComponent],
   imports: [BrowserModule, AppRoutingModule, HeaderModule, ObservableModule],
   providers: [],
   bootstrap: [AppComponent],
