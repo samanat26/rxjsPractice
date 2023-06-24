@@ -43,4 +43,5 @@ export class ArrayComponent {
     temp.splice(i,1);
      // save();
   }
+  // save(){}
 }

@@ -1,0 +1,63 @@
+<h1 class="py-3">Filter</h1>
+<br />
+<br />
+<div class="row">
+  <div class="col-md-4">
+    <strong>Ex - 01 </strong>
+    <h6 class="py-2 px-2 bg-light rounded">
+      Filter : <strong>By Length</strong>
+    </h6>
+    <hr />
+    <h6>Output :</h6>
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+      </tr>
+      <tr *ngFor="let i of data1">
+        <td>{{ i.id }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.gender }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <strong>Ex - 02 </strong>
+    <h6 class="py-2 px-2 bg-light rounded">
+      Filter : <strong>By Gender</strong>
+    </h6>
+    <hr />
+    <h6>Output :</h6>
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let i of data2">
+        <td>{{ i.id }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.gender }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <strong>Ex - 03 </strong>
+    <h6 class="py-2 px-2 bg-light rounded">
+      Filter : <strong>By nth item</strong>
+    </h6>
+    <hr />
+    <h6>Output :</h6>
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let i of data3">
+        <td>{{ i.id }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.gender }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

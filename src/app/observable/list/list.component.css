@@ -23,8 +23,8 @@
 .card-body::before {
   content: "";
   position: absolute;
-  top: -75px;
-  left: -45px;
+  top: -7px;
+  left: -100px;
   z-index: -1;
   background: linear-gradient(to right, #3bd9d9, #36a6bf);
   border-radius: 50%;

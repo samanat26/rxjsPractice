@@ -1,0 +1,51 @@
+<h1 class="py-3">Retry</h1>
+<br />
+<br />
+<div class="row">
+  <div class="col-12">
+    <strong>Ex - 01 </strong>
+    <h5 class="py-2 px-2 bg-light rounded">
+      <strong>Retry | RetryWhen (Scan & Delay) </strong>
+    </h5>
+    <hr />
+    <table class="table" *ngIf="users != null">
+      <tr>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Username</th>
+        <th>Website</th>
+        <th>Company</th>
+      </tr>
+
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.website }}</td>
+        <td>{{ user.company.name }}</td>
+      </tr>
+    </table>
+
+    <button class="btn btn-primary" type="button" (click)="fetchDetails()">
+      <span
+        *ngIf="fetching"
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      {{ fetching ? "Fetching..." : "Fetch Details" }}
+    </button>
+    <br />
+    <br />
+    <span
+      [ngClass]="{
+        'text-success': status == 'Data Fetched',
+        'text-danger': status == 'Problem while fetching error'
+      }"
+      >Status: <strong>{{ status }}</strong></span
+    >
+    <div *ngIf="fetching" class="spinner-grow text-dark" role="status">
+      <span class="visually-hidden">fetching...</span>
+    </div>
+  </div>
+</div>

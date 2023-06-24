@@ -1,0 +1,31 @@
+<h1 class="py-3">DebounceTime & DistinctUntilChanged</h1>
+<br />
+<br />
+<div class="row">
+  <div class="col-md-6">
+    Ex - 01 <strong class="text-success"> Debounce Time</strong>
+    <hr />
+    <div class="mb-3 row">
+      <label class="col-sm-2 col-form-label">Search</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" #input />
+        <span *ngIf="event != null" class="text-success">
+          <strong>{{ event }}</strong>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    Ex - 02 <strong class="text-warning"> DistinctUntilChanged</strong>
+    <hr />
+    <div class="mb-3 row">
+      <label class="col-sm-2 col-form-label">Search</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" #myinput />
+        <span *ngIf="event2 != null" class="text-success">
+          <strong>{{ event2 }}</strong>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
