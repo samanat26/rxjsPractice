@@ -17,7 +17,7 @@ export class DebounceTimeComponent {
   constructor() {}
 
   ngAfterViewInit() {
-    //Ex-01 Debounce Time
+    //Ex-01 Debounce Time used to hit the key to search
     const source = fromEvent<any>(this.input.nativeElement, 'keyup').pipe(
       map((event) => event.target.value),
       debounceTime(500)

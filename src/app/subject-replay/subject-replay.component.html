@@ -1,1 +1,70 @@
-<p>subject-replay works!</p>
+<div class="container m-5 justify-content-center">
+  <h3 class="my-3">Subject Replay</h3>
+  <br />
+  <div class="container m-2 d-flex justify-content-between">
+    <h4>{{ !this.toggle ? "Time Interval Starts" : "Add Video" }}</h4>
+    <button
+      [ngClass]="!this.toggle ? 'btn-danger' : 'btn-warning'"
+      class="btn"
+      (click)="toggleMethod()"
+    >
+      {{ !this.toggle ? "Stop" : "Start Interval" }}
+    </button>
+  </div>
+  <hr />
+
+  <div class="container" *ngIf="this.toggle">
+    <div class="row">
+      <div class="col gap-3 d-flex justify-content-between">
+        <input class="form-control" type="text" #myInput />
+        <button class="btn btn-primary mt-2" (click)="add(myInput)">add</button>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <div class="row px-3">
+    <div class="col-md-4">
+      <p class="bg-light py-2 px-3 border rounded">User - 01</p>
+
+      <hr />
+      <br />
+      <ul *ngFor="let item of userList" class="style" id="elContainer">
+        <li><strong>Video : </strong>{{ item }}</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <p class="bg-light py-2 px-3 border rounded">User - 02</p>
+
+      <hr />
+      <br />
+      <ul *ngFor="let item of userList2" class="style" id="elContainer">
+        <li>{{ item }}</li>
+      </ul>
+      <button
+        [ngClass]="sub2 ? 'btn-danger' : 'btn-success'"
+        class="btn mt-2"
+        (click)="subscribeBtn2()"
+      >
+        {{ sub2 ? "Unsubscribe" : "Subscribe" }}
+      </button>
+    </div>
+    <div class="col-md-4">
+      <p class="bg-light py-2 px-3 border rounded">User - 03</p>
+
+      <hr />
+      <br />
+      <ul *ngFor="let item of userList3" class="style" id="elContainer">
+        <li>{{ item }}</li>
+      </ul>
+
+      <button
+        [ngClass]="sub3 ? 'btn-danger' : 'btn-success'"
+        class="btn mt-2"
+        (click)="subscribeBtn3()"
+      >
+        {{ sub3 ? "Unsubscribe" : "Subscribe" }}
+      </button>
+    </div>
+  </div>
+</div>

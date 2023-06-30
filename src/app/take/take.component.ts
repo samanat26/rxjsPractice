@@ -35,7 +35,7 @@ export class TakeComponent {
     });
     //Ex -02 TakeUntil
     //takeUntil takes 2 conditions holding an observable
-    // const conObs = timer(5000);
+    const conObs = timer(5000);
     const conObs2 = fromEvent(document, 'click');
     // const source3 = from(this.randomNames).pipe(takeUntil(conObs));
     const source3 = interval(1000).pipe(takeUntil(conObs2));

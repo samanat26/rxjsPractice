@@ -13,6 +13,6 @@ export class ListComponent {
     this.value = data;
   }
   ngOnInit() {
-    console.log(this.value);
+    // console.log(this.value);
   }
 }

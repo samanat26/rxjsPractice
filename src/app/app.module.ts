@@ -32,6 +32,10 @@ import { ShareReplayComponent } from './share-replay/share-replay.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 import { ZipForkComponent } from './zip-fork/zip-fork.component';
 import { CatchErrorComponent } from './catch-error/catch-error.component';
+import { CompsModule } from './comps/comps/comps.module';
+import { Concatemap2Component } from './concatemap2/concatemap2.component';
+import { SwitchComp2Component } from './switch-comp2/switch-comp2.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -61,15 +65,20 @@ import { CatchErrorComponent } from './catch-error/catch-error.component';
     CombineLatestComponent,
     ZipForkComponent,
     CatchErrorComponent,
+    Concatemap2Component,
+
+    SwitchComp2Component,
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
     ObservableModule,
     HttpClientModule,
+    CompsModule,
+    FormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}

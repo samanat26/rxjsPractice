@@ -11,7 +11,8 @@ export class HeaderComponent {
 
   constructor(private ex: DesignUtiliesPrintService) {}
   ngOnInit() {
-    this.ex.exclusive;
-    // .next((res: boolean) => this.exclusive = res);
+    this.ex.exclusive.subscribe((res) => {
+      this.exclusive = res;
+    });
   }
 }

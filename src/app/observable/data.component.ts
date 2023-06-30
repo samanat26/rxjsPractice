@@ -86,7 +86,7 @@ export const data = {
     },
     {
       observable: 'Async Subject',
-      // importance: 'importance ',
+      // importance: 'it gives only a latest value after subscription ',
       example: 'check it out',
       link: '/observable/asyncSubject',
     },
@@ -107,6 +107,12 @@ export const data = {
       // importance: 'importance ',
       example: 'check it out',
       link: '/observable/concate',
+    },
+    {
+      observable: 'Mobile Notification using Concate Map',
+      // importance: 'importance ',
+      example: 'check it out',
+      link: '/observable/concatemn',
     },
     {
       observable: 'switchMap',
@@ -145,4 +151,5 @@ export const data = {
       link: '/observable/error',
     },
   ],
+  css: [{ name: 'cards', link: '' }],
 };

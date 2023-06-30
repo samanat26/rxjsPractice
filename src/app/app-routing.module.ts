@@ -28,9 +28,20 @@ import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 import { ZipForkComponent } from './zip-fork/zip-fork.component';
 import { CatchErrorComponent } from './catch-error/catch-error.component';
+import { Concatemap2Component } from './concatemap2/concatemap2.component';
+import { CssComponent } from './css/card/css/css.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
+  // {
+  //   path: 'css',
+  //   component: CssComponent,
+  //   children: [
+  //     {
+  //       // path:'',component: card
+  //     },
+  //   ],
+  // },
   {
     path: 'observable',
     component: ObservableComponent,
@@ -53,6 +64,7 @@ const routes: Routes = [
       { path: 'conMerge', component: ConcatMergeComponent },
       { path: 'merge', component: MergeMapComponent },
       { path: 'concate', component: ConcateMapComponent },
+      { path: 'concatemn', component: Concatemap2Component },
       { path: 'switchmap', component: SwitchMapComponent },
       { path: 'exhausthmap', component: ExhaustMapComponent },
       { path: 'share', component: ShareReplayComponent },

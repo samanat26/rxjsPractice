@@ -1,0 +1,51 @@
+<div class="my-3">
+  <strong>Searching By Using Switch Map</strong>
+</div>
+<div class="row justify-content-center">
+  <div class="col">
+    <form #searchTerm="ngForm">
+      <div class="mt-3">
+        <input
+          class="form-control form-control-md"
+          type="text"
+          required
+          name="searchTerm"
+          autocomplete="off"
+        />
+      </div>
+    </form>
+    <hr />
+    <br />
+    <div class="d-flex">
+      <h6>Search Results</h6>
+
+      <span>5 results found</span>
+    </div>
+    <br />
+    <br />
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Thumbnail</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">id</th>
+          <td>
+            <img src="thumbnail" alt="video1" width="120px" />
+          </td>
+          <td>
+            <p>description</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
